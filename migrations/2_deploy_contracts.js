@@ -1,8 +1,8 @@
 const ERC20Token = artifacts.require("ERC20Token");
-const CrowdSale = artifacts.require("CrowdSale");
+const MyCrowdSale = artifacts.require("MyCrowdSale");
 
 module.exports = async deployer => {
   deployer.deploy(ERC20Token, 1000000).then(() => {
-    deployer.deploy(CrowdSale, 1, "CFC29313EF0AE1A50BBD4956C673ED5188835D55A23A0235A1A497DEC15E68EF", ERC20Token.address);
+    return deployer.deploy(MyCrowdSale, 1, "0xf073c0fe3213a6670069d8a5a1019818C59263f6", ERC20Token.address);
   }); 
 };

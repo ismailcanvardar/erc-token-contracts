@@ -898,7 +898,7 @@
                                         "name": "this",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 2781,
+                                        "referencedDeclaration": 2803,
                                         "src": "1455:4:12",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_contract$_SafeERC20_$1474",
@@ -1487,7 +1487,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2781,
+                                "referencedDeclaration": 2803,
                                 "src": "1811:4:12",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_SafeERC20_$1474",
@@ -2021,7 +2021,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2781,
+                                "referencedDeclaration": 2803,
                                 "src": "2099:4:12",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_SafeERC20_$1474",
@@ -4084,7 +4084,7 @@
                                         "name": "this",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 2781,
+                                        "referencedDeclaration": 2803,
                                         "src": "1455:4:12",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_contract$_SafeERC20_$1474",
@@ -4673,7 +4673,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2781,
+                                "referencedDeclaration": 2803,
                                 "src": "1811:4:12",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_SafeERC20_$1474",
@@ -5207,7 +5207,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2781,
+                                "referencedDeclaration": 2803,
                                 "src": "2099:4:12",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_SafeERC20_$1474",
@@ -6386,7 +6386,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-04-14T19:24:41.981Z",
+  "updatedAt": "2020-04-14T21:15:25.457Z",
   "devdoc": {
     "details": "Wrappers around ERC20 operations that throw on failure (when the token contract returns false). Tokens that return no value (and instead revert or throw on failure) are also supported, non-reverting calls are assumed to be successful. To use this library you can add a `using SafeERC20 for ERC20;` statement to your contract, which allows you to call the safe operations as `token.safeTransfer(...)`, etc.",
     "methods": {},

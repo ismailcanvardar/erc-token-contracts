@@ -600,7 +600,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2779,
+                                "referencedDeclaration": 2793,
                                 "src": "2684:4:17",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Address_$2714",
@@ -1658,7 +1658,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2779,
+                                "referencedDeclaration": 2793,
                                 "src": "2684:4:17",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Address_$2714",
@@ -2130,7 +2130,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-04-14T19:24:42.041Z",
+  "updatedAt": "2020-04-14T21:15:25.509Z",
   "devdoc": {
     "details": "Collection of functions related to the address type",
     "methods": {}

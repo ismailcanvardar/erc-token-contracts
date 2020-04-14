@@ -1,6 +1,6 @@
 const ERC20Token = artifacts.require("./ERC20Token.sol");
 
-contract("ERC20Token", (accounts) => {
+contract("ERC20Token", accounts => {
   const account_one = accounts[0];
   const account_two = accounts[1];
 

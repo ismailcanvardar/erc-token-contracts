@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity >=0.4.21 <0.7.0;
 
 import "@openzeppelin/contracts/token/ERC777/ERC777.sol";
 

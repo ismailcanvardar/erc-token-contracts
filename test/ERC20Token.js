@@ -1,14 +1,11 @@
-const Token = artifacts.require("./Token.sol");
+const ERC20Token = artifacts.require("./ERC20Token.sol");
 
-contract("Token", (accounts) => {
-  let tokenInstance;
+contract("ERC20Token", (accounts) => {
   const account_one = accounts[0];
   const account_two = accounts[1];
-  const account_three = accounts[2];
-  const account_four = accounts[3];
 
   it("check initialization values", async () => {
-    let tokenInstance = await Token.deployed();
+    let tokenInstance = await ERC20Token.deployed();
     let tokenName = await tokenInstance.name();
     let tokenSymbol = await tokenInstance.symbol();
     let tokenDecimals = await tokenInstance.decimals();
@@ -19,7 +16,7 @@ contract("Token", (accounts) => {
   });
 
   it("check totalSupply and creator's balance", async () => {
-    let tokenInstance = await Token.deployed();
+    let tokenInstance = await ERC20Token.deployed();
     let totalSupply = await tokenInstance.totalSupply();
     let balanceOfAccountOne = await tokenInstance.balanceOf.call(account_one);
 
@@ -34,7 +31,7 @@ contract("Token", (accounts) => {
   it("transfer token", async () => {
     const amount = 1000;
 
-    let tokenInstance = await Token.deployed();
+    let tokenInstance = await ERC20Token.deployed();
 
     let balance = await tokenInstance.balanceOf.call(account_one);
     let account_one_starting_balance = balance.toNumber();
@@ -82,7 +79,7 @@ contract("Token", (accounts) => {
   it("approve tokens for delegated transfer", async () => {
     const amount = 1000;
 
-    let tokenInstance = await Token.deployed();
+    let tokenInstance = await ERC20Token.deployed();
 
     let isApproveSucceeded = await tokenInstance.approve.call(
       account_two,
@@ -133,7 +130,7 @@ contract("Token", (accounts) => {
   });
 
   it("handles delegated token transfers", async () => {
-    let tokenInstance = await Token.deployed();
+    let tokenInstance = await ERC20Token.deployed();
     let fromAccount = accounts[2];
     let toAccount = accounts[3];
     let spendingAccount = accounts[4];
